@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery | CodeAlpha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">Pixel<span>Gallery.</span></a>
+    <p>Discover the beauty around us</p>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <p class="tag">MY CREATIVE SPACE</p>
+      <h1>Explore the <span>Gallery</span></h1>
+      <p class="subtitle">
+        A collection of beautiful moments, places and nature.
+      </p>
+    </section>
+
+    <div class="filters">
+      <button class="filter active" data-category="all">All Photos</button>
+      <button class="filter" data-category="nature">Nature</button>
+      <button class="filter" data-category="architecture">Architecture</button>
+      <button class="filter" data-category="travel">Travel</button>
+    </div>
+
+    <section class="gallery" id="gallery">
+
+      <article class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=900&q=80" alt="Sunrise over a green landscape">
+        <div class="image-info">
+          <h3>Golden Sunrise</h3>
+          <p>Nature</p>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=80" alt="Modern architectural building">
+        <div class="image-info">
+          <h3>Modern Design</h3>
+          <p>Architecture</p>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="travel">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Mountain peaks">
+        <div class="image-info">
+          <h3>Mountain Escape</h3>
+          <p>Travel</p>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" alt="Sunlight through a forest">
+        <div class="image-info">
+          <h3>Forest Dreams</h3>
+          <p>Nature</p>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=900&q=80" alt="Contemporary white building">
+        <div class="image-info">
+          <h3>Urban Spaces</h3>
+          <p>Architecture</p>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="travel">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Scenic travel destination">
+        <div class="image-info">
+          <h3>Open Horizons</h3>
+          <p>Travel</p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog"
+       aria-modal="true" aria-label="Image preview" hidden>
+    <button class="close" id="closeBtn" aria-label="Close">&times;</button>
+    <button class="nav-btn prev" id="prevBtn" aria-label="Previous image">&#10094;</button>
+    <figure>
+      <img id="lightboxImg" src="" alt="">
+      <figcaption id="caption"></figcaption>
+    </figure>
+    <button class="nav-btn next" id="nextBtn" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <footer>
+    <p>Designed with ♥ | CodeAlpha Frontend Internship</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
